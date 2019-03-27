@@ -25,7 +25,7 @@ SECRET_KEY = '02i!m$8&wg5cr2tlwogqjz+ita@sivu5db!0)65lue#^-plgd0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'kaiserkennedy.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhots','127.0.0.1','kaisereliot.pythonanywhere.com']
 
 
 # Application definition
