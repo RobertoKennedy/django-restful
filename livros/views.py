@@ -14,7 +14,7 @@ def livro_list(request):
 	return render(request, 'livros/livro_list.html', {'livros': livros}) 
 
 def livro_detail(request, pk):
-    livro = get_object_or_404(Livro, pk=pk) #Livro.objects.get(pk=pk)
+    livro = get_object_or_404(Livro, pk=pk) 
     return render(request, 'livros/livro_detail.html', {'livro': livro}) 
 
 def livro_new(request):
@@ -22,8 +22,6 @@ def livro_new(request):
          form = LivroForm(request.POST)
          if form.is_valid():
              livro = form.save(commit=False)
-             #post.author = request.user
-             #post.published_date = timezone.now()
              livro.save()
              return redirect('livro_detail', pk=livro.pk)
      else:
