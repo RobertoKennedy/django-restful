@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['localhots','127.0.0.1','kaisereliot.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+	'rest_framework',
+	'core',
     'livros',
     'django.contrib.admin',
     'django.contrib.auth',
